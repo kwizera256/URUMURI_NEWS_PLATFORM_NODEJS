@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+.tick { display: inline-block; white-space: nowrap; animation: tick 45s linear infinite; }
+@keyframes tick { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+
+.page-loader { position: fixed; inset: 0; z-index: 60; display: flex; align-items: center; justify-content: center; background: rgba(248,246,241,.72); backdrop-filter: blur(2px); }
+.page-loader .spinner { width: 44px; height: 44px; border: 4px solid #e7e2d8; border-top-color: #f5c518; border-radius: 9999px; animation: app-spin .8s linear infinite; }
+@keyframes app-spin { to { transform: rotate(360deg); } }

@@ -1,0 +1,3 @@
+{ "name": "urumuri-news", "private": true, "version": "3.0.0", "engines": { "node": ">=26.13.0", "npm": ">=11.20.0" }, "workspaces": ["backend", "frontend"],
+  "scripts": { "dev": "concurrently -n api,web -c blue,green \"npm run dev -w backend\" \"npm run dev -w frontend\"", "build": "npm run build -w frontend && npm run build -w backend", "start": "npm start -w backend", "create-admin": "npm run create-admin -w backend --" },
+  "devDependencies": { "concurrently": "^9.0.1" } }

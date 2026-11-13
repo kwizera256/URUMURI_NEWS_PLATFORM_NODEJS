@@ -1,0 +1,1 @@
+export default { content: ['./index.html', './src/**/*.{js,jsx}'], theme: { extend: { colors: { brand: '#0054bb', sun: '#ffc400', ink: '#0b1b3a', navy: '#06285f', paper: '#f5f7fb' }, fontFamily: { display: ['"Playfair Display"', 'serif'] } } } };

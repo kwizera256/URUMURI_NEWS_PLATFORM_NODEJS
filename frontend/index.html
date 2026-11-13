@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>URUMURI NEWS</title><link rel="icon" href="/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- Cloudflare CDN (cdnjs). Add integrity="sha384-..." from cdnjs.com to each tag before going live; main.jsx falls back to the npm copies if the CDN is blocked. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.17.4/video-js.min.css" crossorigin="anonymous">
+<style>
+  #app-loader{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#f8f6f1;color:#1a2744;transition:opacity .35s ease,visibility .35s ease}
+  #app-loader.hide{opacity:0;visibility:hidden;pointer-events:none}
+  #app-loader .spinner{width:48px;height:48px;border:4px solid #e7e2d8;border-top-color:#f5c518;border-radius:50%;animation:app-spin .8s linear infinite}
+  #app-loader .label{font:700 1rem/1.2 'Source Sans 3',sans-serif;letter-spacing:.02em}
+  @keyframes app-spin{to{transform:rotate(360deg)}}
+</style>
+</head><body class="bg-paper text-ink antialiased" style="font-family:'Source Sans 3',sans-serif"><div id="app-loader" role="status" aria-live="polite" aria-label="Loading"><div class="spinner"></div><div class="label">URUMURI NEWS</div></div><div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.17.4/video.min.js" crossorigin="anonymous"></script>
+<script type="module" src="/src/main.jsx"></script></body></html>
